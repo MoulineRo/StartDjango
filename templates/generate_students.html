@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<form action="/generate-students/" method="get">
+</form>
+<ul>
+    {% for contractor in students %}
+
+    <p></p>
+    <option value="{{ contractor.first_name }}">{{ contractor.first_name }}</option>
+    <option value="{{ contractor.last_name }}">{{ contractor.last_name }}</option>
+    <option value="{{ contractor.age }}">{{ contractor.age }}</option>
+    <p></p>
+
+ {% endfor %}
+</ul>
+</body>
+</html>
